@@ -1,0 +1,104 @@
+html, body {
+	margin:0;
+	width:100%;
+	min-height:100%;
+	height:100%;
+	overflow:hidden;
+	font-family:Lucida, Verdana, sans-serif;
+	font-size:16px;
+	color:#FFF;
+}
+body {
+	background:linear-gradient(#002, #004);
+}
+
+#asteroidLevel,
+#shuttleLevel,
+#hud,
+#startScreen,
+#finalScreen {
+	position:absolute;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	display:none;
+}
+
+#shuttle {
+	position:absolute;
+	width:30px;
+	height:30px;
+	background:url(../img/shuttle.png) no-repeat;
+	background-size:100%;
+	border-radius:50%;
+	
+	box-shadow:rgba(191,223,255, 0) 0px 0px 0px 0px;
+	transition:background 0.5s ease, box-shadow 0.5s ease;
+}
+.shot {
+	background:#FFF;
+	border-radius:50%;
+}
+
+#score {
+	position:absolute;
+	top:20px;
+	left:20px;
+	padding:10px;
+	background:rgba(200,20,20,0.4);
+}
+#level { 
+	position:absolute;
+	top:60px;
+	left:20px;
+	padding:10px;
+	background:rgba(200,20,20,0.4);
+}
+
+#healthpoints {
+	position:absolute;
+	left:20px;
+	bottom:20px;
+	width:18px;
+	height:18px;
+	border:#CCC thin solid;
+	border-radius:5px;
+	background:#0C0;
+	transition: all 0.3s ease;
+}
+#shield {
+	position:absolute;
+	left:20px;
+	bottom:50px;
+	width:18px;
+	height:18px;
+	border:#CCC thin solid;
+	border-radius:5px;
+	background:#06F;
+	transition: all 0.3s ease;
+}
+
+h1 {
+	font-size:3em;
+	text-align:center;
+	margin:3em 0 2em;
+}
+#finalScore {
+	width:50%;
+	text-align:center;
+	margin:1em auto;
+}
+#startBtn,
+#resetBtn {
+	background:linear-gradient(#C00, #600);
+	padding:10px;
+	font-size:20px;
+	font-family:Lucida, Verdana, sans-serif;
+	color:#FFF;
+	border:#CCC thin solid;
+	border-radius:5px;
+	display:block;
+	width:200px;
+	margin:0 auto;
+	cursor:pointer;
+}
