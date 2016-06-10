@@ -17,7 +17,7 @@ var hpColors = ["#300", "#600", "#930", "#C60", "#C90", "#CC0", "#9C0", "#6C0", 
 
 var keys = new Array();
 
-// Game vorbereiten
+// Prepare Game
 
 function initGame() {
 	asteroidLevel = document.getElementById('asteroidLevel');
@@ -41,6 +41,7 @@ function initGame() {
 }
 
 // Startwerte setzen und Spiel starten 
+// Set initial values and restart game
 
 function resetGame() {
 	
@@ -77,6 +78,7 @@ function resetGame() {
 }
 
 // Asteroiden erzeugen
+// Create Asteroids
 /* *************************************************************** */
 
 function createAsteroid() {
@@ -127,6 +129,7 @@ function moveAsteroid(target) {
 }
 
 // Waffenfeuer
+// Fire Weapon
 /* *************************************************************** */
 
 function fireWeapon() {
@@ -161,7 +164,7 @@ function moveShot(target) {
 }
 
 // Kollisionstest Waffen / Asteroiden
-
+// Collision test shot / asteroid
 function hittest(shot) {
 	var asteroids = asteroidLevel.getElementsByTagName('DIV');
 	var sxm = shot.offsetLeft + shot.offsetWidth/2;
@@ -319,7 +322,7 @@ function endGame() {
 }
 
 // Tastensteuerung
-
+// Keyboard control
 function getKey() {
 	window.onkeydown = function(event) {
 		keys[event.keyCode] = true;
