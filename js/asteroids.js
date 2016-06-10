@@ -274,7 +274,7 @@ function collision(asteroid) {
 			img = "shuttle2";
 		} 
 		setCSS(shuttle, {
-			backgroundImage:"url(images/" + img + ".png)",
+			backgroundImage:"url(img/" + img + ".png)",
 			boxShadow:"rgba(159,207,255," + (0.1 * shieldHP) + ") 0px 0px 10px 3px"
 		});
 		setCSS(hpDisplay, {
@@ -316,7 +316,7 @@ function endGame() {
 	shuttleLevel.style.display = "none";
 	hud.style.display = "none";
 	
-	var txt = "Sie haben es bis Level " + lvl + " geschafft und " + score + " Punkte erzielt. Geht es nicht auch noch besser?";
+	var txt = "You made it to Level " + lvl + " and got " + score + " Points. Try again?";
 	finalScore.innerHTML = txt;
 	finalScreen.style.display = "block";
 }
